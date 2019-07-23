@@ -1,4 +1,4 @@
-/*import React, { Component } from 'react';
+import React, { Component } from 'react';
 import ComponentVisualInput from '../components/componentVisualInput';
 import ComponentVisualButton from '../components/componentVisualButton';
 import './css/templateAuth.css';
@@ -10,7 +10,7 @@ class templateAuth extends Component {
         <section className="containerForm">
         <p>Necesitamos tus datos</p>
         
-        <ComponentVisualInput message="Nombre y apellido"></ComponentVisualInput>
+        <ComponentVisualInput message="Nombre y apellido" className="col-xs-6"></ComponentVisualInput>
         <ComponentVisualInput message="Empresa a la que representas"></ComponentVisualInput>
         <ComponentVisualInput message="Rut de la empresa"></ComponentVisualInput>
         <ComponentVisualInput message="Correo electrónico"></ComponentVisualInput>
@@ -34,26 +34,5 @@ class templateAuth extends Component {
   }
 }
 
-export default templateAuth;*/
-import React, { useEffect, useState } from "react";
-import app from "../data/firebase/firebase.js";
+export default templateAuth;
 
-export const AuthContext = React.createContext();
-
-export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
-
-  useEffect(() => {
-    app.auth().onAuthStateChanged(setCurrentUser);
-  }, []);
-
-  return (
-    <AuthContext.Provider
-      value={{
-        currentUser
-      }}
-    >
-      {children}
-    </AuthContext.Provider>
-  );
-};
