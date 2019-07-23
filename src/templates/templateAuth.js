@@ -10,7 +10,7 @@ class templateAuth extends Component {
         <section className="containerForm">
         <p>Necesitamos tus datos</p>
         
-        <ComponentVisualInput message="Nombre y apellido" className="col-xs-6"></ComponentVisualInput>
+        <ComponentVisualInput message="Nombre y apellido"></ComponentVisualInput>
         <ComponentVisualInput message="Empresa a la que representas"></ComponentVisualInput>
         <ComponentVisualInput message="Rut de la empresa"></ComponentVisualInput>
         <ComponentVisualInput message="Correo electrónico"></ComponentVisualInput>
