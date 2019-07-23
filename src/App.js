@@ -5,13 +5,11 @@ import {
 import templateHome from './templates/templateHome';
 import templateAbout from './templates/templateAbout';
 import templateForm from './templates/templateForm';
-import './App.css';
-<<<<<<< HEAD
 import templateAuth from './templates/templateAuth';
-=======
+import './App.css';
 import logo from './img/1111.png';
 
->>>>>>> develop-equipo
+
 
 function App() {
   return (
@@ -21,12 +19,7 @@ function App() {
         {/* <ul>
           <li></li>
           <li><NavLink to="/SCL008-ProyectoMoms/about" exact activeClassName="active">About</NavLink></li>
-<<<<<<< HEAD
-          <li><NavLink to="/SCL008-ProyectoMoms/auth" exact activeClassName="active">Empresa</NavLink></li>
-        </ul>
-=======
         </ul> */}
->>>>>>> develop-equipo
       </header>
       <main>
         <Switch>

@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import app from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/firebase-auth';
 
 // Inicializacion del proyecto en firebase
 const config = {
@@ -20,5 +21,6 @@ class Firebase {
     this.db = app.firestore();
   }
 }
+
 
 export default Firebase;

@@ -1,0 +1,23 @@
+
+p{
+    color:  #F1717F;
+}
+.containerForm span{
+    position: absolute;
+    text-align: center;
+    left: 38%;
+    top: 145%;
+    color:white;
+    font-size: 18px;
+}
+.login-btn{
+    position: absolute;
+    width: 50%;
+    height: 45px;
+    left: 12.5%;
+    top: 107%;
+    background: #F1717F;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
